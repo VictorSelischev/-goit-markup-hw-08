@@ -1,0 +1,28 @@
+.logo {
+  display: inline-block;
+
+  color: var(--brand-color);
+  text-decoration: none;
+  font-family: var(--font-logo);
+  font-weight: var(--font-w700);
+  @include font (26px, 1.19, 0.03em);
+
+  &__part {
+    &_color_black {
+  color: var(--brand-color-black);
+}
+
+    &_color_white {
+  color: var(--brand-color-white);
+}
+  }
+}
+
+.header__logo {
+  padding: 25px 0;
+  margin-right: 90px;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}

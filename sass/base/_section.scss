@@ -1,0 +1,12 @@
+.section {
+  padding: 95px 0;
+
+  &_padding-top_null {
+    padding-top: 0;
+  }
+
+  &_fon_gray {
+    background: var(--button-filter-color);
+  }
+}
+

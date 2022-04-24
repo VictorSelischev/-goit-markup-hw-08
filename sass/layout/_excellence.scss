@@ -1,0 +1,36 @@
+.excellence-list {
+  @extend %list;
+  
+  display: flex;
+}
+
+.excellence-list__item {
+  max-width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.excellence-list__icon {
+  @include centeredFlex ();
+  height: 120px;
+  border-radius: 4px;
+  
+  margin-bottom: 30px;
+  
+  background-color: var(--button-filter-color);
+}
+
+.excellence-list__subtitle {
+  margin-bottom: 10px;
+
+  font-weight: var(--font-w700);
+  @include font (14px, 1.14, 0.03em);
+  text-transform: uppercase;
+}
+
+.excellence-list__text {
+  color: var(--text-color-two);
+  @include font (14px, 1.71, 0.03em);
+}
