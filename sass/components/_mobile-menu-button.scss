@@ -1,5 +1,8 @@
 .mobile-menu-button {
-    @include centeredFlex ($disp: inline-flex);
+    padding: 0;
     border: none;
-    background-color: var(--color-white);
+    background-color: transparent;
+    line-height: 0;
+
+    fill: #000000;
 }

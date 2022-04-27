@@ -3,16 +3,19 @@ width: 100%;
 padding-left: 15px;
 padding-right: 15px;
 
+// 480 +
 @media screen and (min-width: 480px) {
   width: 480px;
   margin-left: auto;
   margin-right: auto;
 }
 
+// 768 +
 @media screen and (min-width: 768px) {
   width: 768px;
 }
 
+// 1200 +
 @media screen and (min-width: 1200px) {
   width: 1200px;
 }
