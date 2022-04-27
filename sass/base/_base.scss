@@ -4,10 +4,6 @@ body {
   font-family: var(--font-general);
 }
 
-// button {
-//   padding: 0;
-// }
-
 h1,
 h2,
 h3,
@@ -26,4 +22,8 @@ img {
 
 textarea {
   resize: none;
+}
+
+.list {
+  list-style: none;
 }

@@ -42,10 +42,6 @@
   visibility: hidden;
 }
 
-.contacts-list, .address-list, .icons-list, .buttons-list, .excellence-list, .development-list, .team-list, .clients-list, .portfolio-list {
-  list-style: none;
-}
-
 body {
   background-color: var(--color-white);
   color: var(--color-text);
@@ -70,6 +66,10 @@ img {
 
 textarea {
   resize: none;
+}
+
+.list {
+  list-style: none;
 }
 
 .container {
@@ -165,8 +165,20 @@ textarea {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: block;
+  }
+}
+
 .contacts-list {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    display: block;
+  }
 }
 
 .address-list__item:not(:last-child) {
