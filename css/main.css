@@ -1,17 +1,18 @@
 @charset "UTF-8";
 :root {
   --color-white: #ffffff;
-  --brand-color: #2196f3;
-  --brand-color-theme-white: #212121;
-  --brand-color-theme-dark: #ffffff;
-  --icon-color: #afb1b8;
-  --background-color-section: #2f303a;
-  --text-color: #212121;
-  --text-color-two: #757575;
-  --color-section-text-two: rgba(255, 255, 255, 0.6);
-  --button-filter-color: #f5f4fa;
-  --button-filter-color-hover: #188ce8;
+  --color-brand: #2196f3;
+  --color-brand-theme-white: #212121;
+  --color-brand-theme-dark: #ffffff;
+  --color-text: #212121;
+  --color-text-two: #757575;
+  --color-section-theme-dark: #2f303a;
+  --color-section-theme-dark-text-two: rgba(255, 255, 255, 0.6);
+  --color-icon: #afb1b8;
+  --color-button-filter: #f5f4fa;
+  --color-button-filter-hover: #188ce8;
   --color-border: #eeeeee;
+  --color-border-header: #ececec;
   --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --font-general: 'Roboto', sans-serif;
@@ -47,7 +48,7 @@
 
 body {
   background-color: var(--color-white);
-  color: var(--text-color);
+  color: var(--color-text);
   font-family: var(--font-general);
 }
 
@@ -76,7 +77,29 @@ textarea {
 }
 
 .container {
-  padding: 0 15px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -88,7 +111,7 @@ textarea {
 }
 
 .section_fon_gray {
-  background: var(--button-filter-color);
+  background: var(--color-button-filter);
 }
 
 .mobile-menu-button {
@@ -127,7 +150,7 @@ textarea {
 }
 
 .logo {
-  color: var(--brand-color);
+  color: var(--color-brand);
   text-decoration: none;
   font-family: var(--font-logo);
   font-weight: var(--font-w700);
@@ -145,7 +168,7 @@ textarea {
 }
 
 .logo__part_color_black {
-  color: var(--brand-color-theme-white);
+  color: var(--color-brand-theme-white);
 }
 
 .navigation {
@@ -171,7 +194,7 @@ textarea {
 }
 
 .address-list__link_color_two {
-  color: var(--color-section-text-two);
+  color: var(--color-section-theme-dark-text-two);
 }
 
 .footer__logo-address {
@@ -253,7 +276,7 @@ textarea {
 
 .icons-list__link:hover, .icons-list__link:focus {
   color: var(--color-white);
-  background-color: var(--brand-color);
+  background-color: var(--color-brand);
 }
 
 .icons-list__icon {
@@ -280,14 +303,14 @@ textarea {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  background-color: var(--brand-color);
+  background-color: var(--color-brand);
   -webkit-transition: background-color var(--transition-duration) var(--transition-timing-function);
   transition: background-color var(--transition-duration) var(--transition-timing-function);
   cursor: pointer;
 }
 
 .button:hover, .button:focus {
-  background-color: var(--button-filter-color-hover);
+  background-color: var(--color-button-filter-hover);
 }
 
 .button__icon {
@@ -323,7 +346,7 @@ textarea {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  background-color: var(--button-filter-color);
+  background-color: var(--color-button-filter);
   cursor: pointer;
   -webkit-transition: background-color var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function), -webkit-box-shadow var(--transition-duration) var(--transition-timing-function);
   transition: background-color var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function), -webkit-box-shadow var(--transition-duration) var(--transition-timing-function);
@@ -333,7 +356,7 @@ textarea {
 
 .button-list__button:hover, .button-list__button:focus {
   color: var(--color-white);
-  background-color: var(--brand-color);
+  background-color: var(--color-brand);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -390,13 +413,13 @@ textarea {
 }
 
 .cross__icon {
-  fill: var(--text-color);
+  fill: var(--color-text);
   -webkit-transition: fill var(--transition-duration) var(--transition-timing-function);
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .cross:hover .cross__icon {
-  fill: var(--brand-color);
+  fill: var(--color-brand);
 }
 
 .form-modal {
@@ -405,7 +428,7 @@ textarea {
 
 .form-modal__title {
   margin-bottom: 12px;
-  color: var(--text-color);
+  color: var(--color-text);
   text-align: center;
   font-weight: var(--font-w700);
   font-size: 20px;
@@ -426,7 +449,7 @@ textarea {
 
 .form-modal__label {
   margin-bottom: 4px;
-  color: var(--text-color-two);
+  color: var(--color-text-two);
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -456,7 +479,7 @@ textarea {
 }
 
 .form-modal__input:focus {
-  border-color: var(--brand-color);
+  border-color: var(--color-brand);
 }
 
 .form-modal__icon {
@@ -467,7 +490,7 @@ textarea {
 }
 
 .form-field__input:focus + .form-modal__icon {
-  fill: var(--brand-color);
+  fill: var(--color-brand);
 }
 
 .form-modal__comment {
@@ -502,7 +525,7 @@ textarea {
 }
 
 .form-modal__comment:focus {
-  border-color: var(--brand-color);
+  border-color: var(--color-brand);
 }
 
 .form-modal__checkbox-text {
@@ -516,7 +539,7 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
-  color: var(--text-color-two);
+  color: var(--color-text-two);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -543,11 +566,11 @@ textarea {
   margin-right: 4px;
   background-color: #fff;
   border-radius: 2px;
-  border: 2px solid var(--text-color);
+  border: 2px solid var(--color-text);
 }
 
 .form-modal__checkbox:checked + .form-modal__check {
-  background-color: var(--brand-color);
+  background-color: var(--color-brand);
   border: none;
 }
 
@@ -558,7 +581,7 @@ textarea {
 }
 
 .form-modal__link {
-  color: var(--brand-color);
+  color: var(--color-brand);
   cursor: pointer;
 }
 
@@ -590,7 +613,7 @@ textarea {
 
 .project__title {
   margin-bottom: 5px;
-  color: var(--text-color);
+  color: var(--color-text);
   font-weight: var(--font-w700);
   font-size: 18px;
   line-height: 2;
@@ -598,7 +621,7 @@ textarea {
 }
 
 .project__text {
-  color: var(--text-color-two);
+  color: var(--color-text-two);
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.03em;
@@ -641,23 +664,25 @@ textarea {
 }
 
 .header {
-  padding: 10px 0px;
-  border-bottom: 1px solid #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-border-header);
 }
 
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mobile-menu {
+  display: none;
   padding: 10px 15px 48px 40px;
 }
 
@@ -678,7 +703,7 @@ textarea {
 .section-hero {
   padding: 200px 0;
   text-align: center;
-  background-color: var(--background-color-section);
+  background-color: var(--color-section-theme-dark);
 }
 
 .section-hero_overlay_img {
@@ -719,7 +744,7 @@ textarea {
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
-  background-color: var(--button-filter-color);
+  background-color: var(--color-button-filter);
 }
 
 .excellence-list__subtitle {
@@ -732,7 +757,7 @@ textarea {
 }
 
 .excellence-list__text {
-  color: var(--text-color-two);
+  color: var(--color-text-two);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -812,7 +837,7 @@ textarea {
 
 .team-list__text {
   margin-bottom: 15px;
-  color: var(--text-color-two);
+  color: var(--color-text-two);
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -856,8 +881,8 @@ textarea {
 }
 
 .clients-list__link:hover, .clients-list__link:focus {
-  color: var(--brand-color);
-  border-color: var(--brand-color);
+  color: var(--color-brand);
+  border-color: var(--color-brand);
 }
 
 .clients-list__icon {
