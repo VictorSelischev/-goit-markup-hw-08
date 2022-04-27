@@ -173,10 +173,6 @@ textarea {
   color: var(--color-brand-theme-white);
 }
 
-.navigation {
-  line-height: 0;
-}
-
 .nav-list {
   display: none;
 }

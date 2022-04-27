@@ -4,5 +4,17 @@
     background-color: transparent;
     line-height: 0;
 
-    fill: #000000;
+    @include mq (tablet) {
+        display: none;
+    }
+}
+
+.mobile-menu-button__icon-burger {
+        fill: #000000;
+
+}
+
+.mobile-menu-button__icon-close {
+        fill: var(--color-text);
+
 }
