@@ -26,13 +26,13 @@
 .project__title {
     margin-bottom: 5px;
 
-    color: var(--text-color);
+    color: var(--color-text);
     font-weight: var(--font-w700);
     @include font (18px, 2, 0.06em);
 }
 
 .project__text {
-    color: var(--text-color-two);
+    color: var(--color-text-two);
     @include font (16px, 2, 0.03em);
 }
 

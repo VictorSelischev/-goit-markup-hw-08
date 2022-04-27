@@ -10,14 +10,14 @@
   font-weight: var(--font-w700);
   @include font (16px, 1.88, 0.06em);
 
-  background-color: var(--brand-color);
+  background-color: var(--color-brand);
   transition: background-color var(--transition-duration) var(--transition-timing-function);
 
   cursor: pointer;
 
   &:hover,
   &:focus {
-    background-color: var(--button-filter-color-hover);
+    background-color: var(--color-button-filter-hover);
   }
 }
 

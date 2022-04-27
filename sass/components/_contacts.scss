@@ -1,5 +1,6 @@
 .contacts-list {
   display: none;
+  
   @extend %list;
   // display: flex;
 }
@@ -17,7 +18,7 @@
 //   padding-top: 32px;
 //   padding-bottom: 32px;
   
-//   color: var(--text-color-two);
+//   color: var(--color-text-two);
 //   text-decoration: none;
 //   font-weight: var(--font-w500);
 //   @include font (14px, 1.14, 0.02em);
@@ -26,7 +27,7 @@
 
 //   &:hover,
 //   &:focus {
-//     color: var(--brand-color);
+//     color: var(--color-brand);
 //   }
 // }
 

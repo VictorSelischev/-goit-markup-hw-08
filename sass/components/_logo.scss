@@ -1,7 +1,7 @@
 .logo {
 //   display: inline-block;
 
-  color: var(--brand-color);
+  color: var(--color-brand);
   text-decoration: none;
   font-family: var(--font-logo);
   font-weight: var(--font-w700);
@@ -13,14 +13,14 @@
 
   &__part {
     &_color_black {
-      color: var(--brand-color-theme-white);
+      color: var(--color-brand-theme-white);
     }
   }
 }
 
 
 //     &_color_white {
-//   color: var(--brand-color-theme-darke);
+//   color: var(--color-brand-theme-darke);
 // }
  
 

@@ -16,10 +16,10 @@
 }
 
 .cross__icon {
-  fill: var(--text-color);
+  fill: var(--color-text);
   transition: fill var(--transition-duration) var(--transition-timing-function);
 
   .cross:hover & {
-    fill: var(--brand-color);
+    fill: var(--color-brand);
   }
 }

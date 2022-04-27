@@ -19,7 +19,7 @@
   
   margin-bottom: 30px;
   
-  background-color: var(--button-filter-color);
+  background-color: var(--color-button-filter);
 }
 
 .excellence-list__subtitle {
@@ -31,6 +31,6 @@
 }
 
 .excellence-list__text {
-  color: var(--text-color-two);
+  color: var(--color-text-two);
   @include font (14px, 1.71, 0.03em);
 }
