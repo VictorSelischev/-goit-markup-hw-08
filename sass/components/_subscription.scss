@@ -1,0 +1,32 @@
+.media {}
+
+.footer__media {
+  margin-right: 93px;
+}
+
+.media__text,
+.subscription__text {
+  margin-bottom: 20px;
+
+  color: var(--color-white);
+  font-weight: var(--font-w700);
+  @include font (14px, 1.14, 0.03em);
+  text-transform: uppercase;
+}
+
+.subscription__input {
+  display: inline-block;
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  color: rgba(255, 255, 255, 0.6);
+  @include font (16px, 1.25, 0.03em);
+
+  background-color: var(--background-color-section);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+}

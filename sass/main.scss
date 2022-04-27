@@ -8,6 +8,7 @@
 @import './base/container';
 @import './base/section';
 
+@import './components/mobile-menu-button';
 @import './components/section__title';
 @import './components/section-hero__title';
 @import './components/logo';
@@ -26,6 +27,7 @@
 @import './components/project';
 
 @import './layout/header';
+@import './layout/mobile-menu';
 @import './layout/footer';
 @import './layout/hero';
 @import './layout/excellence';

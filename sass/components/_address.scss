@@ -1,0 +1,28 @@
+// FOOTER ADDRESS
+
+.address-list {
+  @extend %list;
+}
+
+.address-list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.address-list__link {
+  display: block;
+
+  text-decoration: none;
+  color: var(--color-white);
+  font-style: normal;
+  @include font (14px, 1.71, 0.03em);
+
+    &_color_two {
+    color: var(--color-section-text-two);
+  }
+}
+
+.footer__logo-address {
+  margin-right: 70px;
+  flex-grow: 1;
+}
+
