@@ -1,7 +1,11 @@
 .contacts-list {
   display: none;
   
-  @extend %list;
+  @include mq (tablet) {
+    display: block;
+  }
+
+  
   // display: flex;
 }
 

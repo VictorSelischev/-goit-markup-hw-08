@@ -1,11 +1,14 @@
 .navigation {
   display: none;
+
+  @include mq (tablet) {
+    display: block;
+  }
 }
 
 // .nav-list {
-//   @extend %list;
-  
-//   display: flex;
+ 
+//   // display: flex;
 // }
 
 // .nav-list__item:not(:last-child) {
