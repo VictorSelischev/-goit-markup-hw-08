@@ -73,7 +73,6 @@ textarea {
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -116,6 +115,12 @@ textarea {
   background-color: transparent;
   line-height: 0;
   fill: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-button {
+    display: none;
+  }
 }
 
 .section__title {
@@ -162,11 +167,15 @@ textarea {
 }
 
 .navigation {
+  line-height: 0;
+}
+
+.nav-list {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .navigation {
+  .nav-list {
     display: block;
   }
 }
