@@ -75,13 +75,13 @@ textarea {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -114,13 +114,20 @@ textarea {
   border: none;
   background-color: transparent;
   line-height: 0;
-  fill: #000000;
 }
 
 @media screen and (min-width: 768px) {
   .mobile-menu-button {
     display: none;
   }
+}
+
+.mobile-menu-button__icon-burger {
+  fill: #000000;
+}
+
+.mobile-menu-button__icon-close {
+  fill: var(--color-text);
 }
 
 .section__title {
@@ -693,7 +700,6 @@ textarea {
 }
 
 .mobile-menu {
-  display: none;
   padding: 10px 15px 48px 40px;
 }
 
