@@ -1,14 +1,12 @@
 .navigation {
-
-  }
-
-.nav-list {
-  display: none;
-  
-  @include mq (tablet) {
-    display: block;
-  }
+    display: none;
+    
+    @include mq (tablet) {
+      display: block;
+    }
 }
+
+// .nav-list {}
 //   // display: flex;
 // }
 
