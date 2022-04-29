@@ -131,6 +131,7 @@ textarea {
   border: none;
   background-color: transparent;
   line-height: 0;
+  fill: #000000;
 }
 
 .mobile-menu-button__close-button {
@@ -140,14 +141,14 @@ textarea {
   fill: var(--color-text);
 }
 
+.mobile-menu-button:active {
+  fill: var(--color-brand);
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu-button {
     display: none;
   }
-}
-
-.mobile-menu-button__icon-burger {
-  fill: #000000;
 }
 
 .section__title {
@@ -723,6 +724,15 @@ textarea {
   height: 100vh;
   background-color: var(--color-white);
   overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .mobile-menu-nav__item:not(:last-child) {
