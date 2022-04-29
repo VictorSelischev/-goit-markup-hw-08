@@ -13,6 +13,8 @@
     visibility: hidden;
     pointer-events: none;
 
+    transition: opacity var(--transition-duration) var(--transition-timing-function), visibility var(--transition-duration) var(--transition-timing-function);
+
     &.is-open {
         opacity: 1;
         visibility: visible;
@@ -34,6 +36,10 @@
     @include font (40px, 1.18, 0.02em);
     
     color: var(--color-text);
+
+    &:active {
+        color: var(--color-brand);
+    }
 }
 
 .mobile-menu__bottom {
