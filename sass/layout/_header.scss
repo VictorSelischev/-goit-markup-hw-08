@@ -1,9 +1,16 @@
 .header {
-  padding-top: 10px;
-  padding-bottom: 10px;
   border-bottom: 1px solid var(--color-border-header);
+
+  @include mq (mobile-only){
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .header__container {
   @include centeredFlex ($jc: space-between);
+
+  @include mq (tablet) {
+    
+  }
 }
