@@ -23,6 +23,19 @@
 
 }
 
+.mobile-menu__container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-right: 15px;
+    padding-left: 40px;
+
+}
 
 
 .mobile-menu-nav__item:not(:last-child) {
@@ -109,3 +122,9 @@
     color: var(--color-brand);
 }
 
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}

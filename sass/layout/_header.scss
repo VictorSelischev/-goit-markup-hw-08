@@ -1,16 +1,19 @@
 .header {
   border-bottom: 1px solid var(--color-border-header);
-
-  @include mq (mobile-only){
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
 }
 
 .header__container {
-  @include centeredFlex ($jc: space-between);
+  @include centeredFlex ();
+}
 
-  @include mq (tablet) {
-    
+
+@media screen and (max-width: 767px) {
+  .header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+  }
+
+  .header__container {
+    justify-content: space-between;
   }
 }

@@ -1,24 +1,28 @@
-.mobile-menu-button {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    line-height: 0;
+    .mobile-menu-button {
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        line-height: 0;
 
-    fill:#000000;
+        fill: #000000;
 
-    &__close-button {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        fill: var(--color-text);
+        &__close-button {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            fill: var(--color-text);
+        }
+
+        &:active {
+            fill: var(--color-brand);
+        }
     }
 
-    &:active {
-        fill: var(--color-brand);
-    }
-
-    @include mq (tablet) {
+@media screen and (min-width: 768px) {
+    .mobile-menu-button {
         display: none;
-    }
+    }   
 }
+
+
 

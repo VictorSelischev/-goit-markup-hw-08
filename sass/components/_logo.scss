@@ -5,30 +5,31 @@
   font-weight: var(--font-w700);
   @include font (24px, 1.17, 0.03em);
 
-  // @media screen and (min-width: 768px) {
-  //   display: inline-block;
-  // }
-
-  @media screen and (min-width: 1200px) {
-      @include font (26px, 1.19, 0.03em);
-}
-
   &__part {
     &_color_black {
       color: var(--color-brand-theme-white);
     }
-  }
 
-  // &_color_white {
-  //   color: var(--color-brand-theme-darke);
-  // }
+    &_color_white {
+      color: var(--color-brand-theme-darke);
+    }
+  }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .header__logo {
     margin-right: 90px;
   }
 }
+
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    @include font (26px, 1.19, 0.03em);
+  }
+}
+
+
 
 // .footer__logo {
 //   margin-bottom: 20px;
