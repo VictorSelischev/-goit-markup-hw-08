@@ -296,8 +296,30 @@ textarea {
 }
 
 @media screen and (min-width: 1200px) {
+  .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contacts-list__mail {
+    width: 16px;
+    height: 12px;
+  }
+  .contacts-list__tel {
+    width: 12px;
+    height: 16px;
+  }
   .contacts-list__item:not(:last-child) {
     margin-right: 50px;
+  }
+  .contacts-list__link {
+    -webkit-transition: color var(--transition-duration) var(--transition-timing-function);
+    transition: color var(--transition-duration) var(--transition-timing-function);
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .contacts-list__link:hover, .contacts-list__link:focus {
+    color: var(--color-brand);
   }
 }
 
