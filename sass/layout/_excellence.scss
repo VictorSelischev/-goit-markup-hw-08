@@ -25,6 +25,10 @@
   @include font (14px, 1.71, 0.03em);
 }
 
+@media screen and (min-width: 480px) {
+
+}
+
 @media screen and (min-width: 768px) {
   .excellence-list {
     display: flex;
@@ -55,6 +59,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .excellence-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   .excellence-list__subtitle {
     text-align: center;
   }
