@@ -1,12 +1,21 @@
+
 .section {
-  padding: 95px 0;
+  padding: 60px 0;
+}
 
-  &_padding-top_null {
-    padding-top: 0;
-  }
-
-  &_fon_gray {
-    background: var(--color-button-filter);
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 95px 0;
+  
+    &_padding-top_null {
+      padding-top: 0;
+    }
+  
+    &_fon_gray {
+      background: var(--color-button-filter);
+    }
   }
 }
+
+
 
