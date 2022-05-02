@@ -1068,6 +1068,9 @@ textarea {
   .excellence-list__item {
     max-width: 270px;
   }
+  .excellence-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (max-width: 767px) {
