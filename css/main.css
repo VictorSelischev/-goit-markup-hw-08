@@ -102,6 +102,10 @@ textarea {
   padding: 60px 0;
 }
 
+.section_fon_gray {
+  background: var(--color-button-filter);
+}
+
 @media screen and (min-width: 1200px) {
   .section {
     padding: 95px 0;
@@ -109,8 +113,11 @@ textarea {
   .section_padding-top_null {
     padding-top: 0;
   }
-  .section_fon_gray {
-    background: var(--color-button-filter);
+}
+
+@media screen and (max-width: 1199px) {
+  .development {
+    display: none;
   }
 }
 
@@ -158,15 +165,24 @@ textarea {
 }
 
 .section-hero__title {
-  max-width: 696px;
+  max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
   color: var(--color-white);
   font-weight: var(--font-w900);
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 
 .logo {
@@ -418,7 +434,7 @@ textarea {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--icon-color);
+  color: var(--color-icon);
   background-color: var(--color-white);
   -webkit-transition: color var(--transition-duration) var(--transition-timing-function);
   transition: color var(--transition-duration) var(--transition-timing-function);
@@ -1002,20 +1018,39 @@ textarea {
 }
 
 .section-hero {
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
   background-color: var(--color-section-theme-dark);
 }
 
 .section-hero_overlay_img {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+  width: 100vw;
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-480.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-480.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-hero_overlay_img {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-960@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-960@2x.jpg");
+  }
+}
+
+.box {
+  width: 480px;
+  height: 320px;
+  background-image: url("photo.png");
+  background-size: 480px 320px;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .box {
+    background-image: url("photo@2x.png");
+  }
 }
 
 .excellence-list__item {
@@ -1128,12 +1163,6 @@ textarea {
   text-transform: uppercase;
 }
 
-.team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .team-list__item {
   border-radius: 0px 0px 4px 4px;
   text-align: center;
@@ -1142,12 +1171,9 @@ textarea {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-list__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team-list__meta {
-  padding: 30px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .team-list__subtitle {
@@ -1164,6 +1190,33 @@ textarea {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 767px) {
+  .team-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+  .team-list__item {
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__meta {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .clients-list {
@@ -1242,7 +1295,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 477px) {
+@media screen and (max-width: 479px) {
   .clients-list__item {
     width: 100%;
   }

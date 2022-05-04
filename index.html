@@ -161,12 +161,12 @@
 
     <main>
       <!-- HERO -->
-      <!-- <section class="section-hero section-hero_overlay_img">
+      <section class="section-hero section-hero_overlay_img">
         <div class="container">
           <h1 class="section-hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
-      </section> -->
+      </section>
 
       <!-- EXCELLENCE -->
       <section class="section">
@@ -222,13 +222,14 @@
       </section>
 
       <!-- DEVELOPMENT -->
-      <!-- <section class="section section_padding-top_null">
+      <section class="section section_padding-top_null development">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
-          <ul class="development-list">
+          <ul class="development-list list">
             <li class="development-list__item">
               <img
-                src="./images/service-1.jpg"
+                srcset="./images/service-1-370.jpg 1x, ./images/service-1-740@2x.jpg 2x"
+                src="./images/service-1-370.jpg"
                 alt="Разработка десктопных приложений"
                 width="370"
                 class="development-list__image"
@@ -239,7 +240,8 @@
             </li>
             <li class="development-list__item">
               <img
-                src="./images/service-2.jpg"
+                srcset="./images/service-2-370.jpg 1x, ./images/service-2-740@2x.jpg 2x"
+                src="./images/service-2-370.jpg"
                 alt="Разработка мобильных приложений"
                 width="370"
                 class="development-list__image"
@@ -250,7 +252,8 @@
             </li>
             <li class="development-list__item">
               <img
-                src="./images/service-3.jpg"
+                srcset="./images/service-3-370.jpg 1x, ./images/service-3-740@2x.jpg 2x"
+                src="./images/service-3-370.jpg"
                 alt="Разработка планшетных приложений"
                 width="370"
                 class="development-list__image"
@@ -261,24 +264,28 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- TEAM -->
-      <!-- <section class="section section_fon_gray">
+      <section class="section section_fon_gray">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
-          <ul class="team-list">
+          <ul class="team-list list">
             <li class="team-list__item">
               <img
-                src="./images/team-member-1.jpg"
+                srcset="
+                  ./images/team-member-1-450.jpg 450w,
+                  ./images/team-member-1-900@2x.jpg 900w
+                "
+                src="./images/team-member-1-450.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
                 class="team-list__image"
               />
               <div class="team-list__meta">
                 <h3 class="team-list__subtitle">Игорь Демьяненко</h3>
                 <p lang="en" class="team-list__text">Product Designer</p>
-                <ul class="icons-list">
+                <ul class="icons-list list">
                   <li class="icons-list__item">
                     <a
                       href="https://www.instagram.com/?hl=ru"
@@ -332,15 +339,16 @@
             </li>
             <li class="team-list__item">
               <img
-                src="./images/team-member-2.jpg"
+                srcset="./images/team-member-2-450.jpg 450w, ./images/team-member-2-900@2x.jpg 900w"
+                src="./images/team-member-2-450.jpg"
                 alt="Ольга Репина"
-                width="270"
+                sizes="100vw"
                 class="team-list__image"
               />
               <div class="team-list__meta">
                 <h3 class="team-list__subtitle">Ольга Репина</h3>
                 <p lang="en" class="team-list__text">Frontend Developer</p>
-                <ul class="icons-list">
+                <ul class="icons-list list">
                   <li class="icons-list__item">
                     <a
                       href="https://www.instagram.com/?hl=ru"
@@ -394,15 +402,16 @@
             </li>
             <li class="team-list__item">
               <img
-                src="./images/team-member-3.jpg"
+                srcset="./images/team-member-3-450.jpg 450w, ./images/team-member-3-900@2x.jpg 900w"
+                src="./images/team-member-3-450.jpg"
                 alt="Николай Тарасов"
-                width="270"
+                sizes="270"
                 class="team-list__image"
               />
               <div class="team-list__meta">
                 <h3 class="team-list__subtitle">Николай Тарасов</h3>
                 <p lang="en" class="team-list__text">Marketing</p>
-                <ul class="icons-list">
+                <ul class="icons-list list">
                   <li class="icons-list__item">
                     <a
                       href="https://www.instagram.com/?hl=ru"
@@ -456,15 +465,16 @@
             </li>
             <li class="team-list__item">
               <img
-                src="./images/team-member-4.jpg"
+                srcset="./images/team-member-4-450.jpg 450w, ./images/team-member-4-900@2x.jpg 900w"
+                src="./images/team-member-4-450.jpg"
                 alt="Михаил Ермаков"
-                width="270"
+                sizes="100vw"
                 class="team-list__image"
               />
               <div class="team-list__meta">
                 <h3 class="team-list__subtitle">Михаил Ермаков</h3>
                 <p lang="en" class="team-list__text">UI Designer</p>
-                <ul class="icons-list">
+                <ul class="icons-list list">
                   <li class="icons-list__item">
                     <a
                       href="https://www.instagram.com/?hl=ru"
@@ -518,7 +528,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- CLIENTS -->
       <section class="section">
@@ -526,42 +536,72 @@
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients-list list">
             <li class="clients-list__item">
-              <a href="http://devoxsoftware.com" target="_blank" rel="noopener noreferrer" class="clients-list__link">
+              <a
+                href="http://devoxsoftware.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="clients-list__link"
+              >
                 <svg width="106" height="60" class="clients-list__icon">
                   <use href="./images/icons.svg#client-logo-1"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list__item">
-              <a href="http://career.sigma.software" target="_blank" rel="noopener noreferrer" class="clients-list__link">
+              <a
+                href="http://career.sigma.software"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="clients-list__link"
+              >
                 <svg width="106" height="60" class="clients-list__icon">
                   <use href="./images/icons.svg#client-logo-2"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list__item">
-              <a href="http://newxel.com" target="_blank" rel="noopener noreferrer" class="clients-list__link">
+              <a
+                href="http://newxel.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="clients-list__link"
+              >
                 <svg width="106" height="60" class="clients-list__icon">
                   <use href="./images/icons.svg#client-logo-3"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list__item">
-              <a href="http://www.softserveinc.com" target="_blank" rel="noopener noreferrer" class="clients-list__link">
+              <a
+                href="http://www.softserveinc.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="clients-list__link"
+              >
                 <svg width="106" height="60" class="clients-list__icon">
                   <use href="./images/icons.svg#client-logo-4"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list__item">
-              <a href="http://www.ciklum.com" target="_blank" rel="noopener noreferrer" class="clients-list__link">
+              <a
+                href="http://www.ciklum.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="clients-list__link"
+              >
                 <svg width="106" height="60" class="clients-list__icon">
                   <use href="./images/icons.svg#client-logo-5"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list__item">
-              <a href="http://gen.tech" target="_blank" rel="noopener noreferrer" class="clients-list__link">
+              <a
+                href="http://gen.tech"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="clients-list__link"
+              >
                 <svg width="106" height="60" class="clients-list__icon">
                   <use href="./images/icons.svg#client-logo-6"></use>
                 </svg>
