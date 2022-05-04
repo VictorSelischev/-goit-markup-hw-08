@@ -1,6 +1,10 @@
 
 .section {
   padding: 60px 0;
+
+  &_fon_gray {
+    background: var(--color-button-filter);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -10,12 +14,12 @@
     &_padding-top_null {
       padding-top: 0;
     }
-  
-    &_fon_gray {
-      background: var(--color-button-filter);
-    }
   }
 }
 
-
+@media screen and (max-width: 1199px) {
+  .development {
+    display: none;
+  }
+}
 

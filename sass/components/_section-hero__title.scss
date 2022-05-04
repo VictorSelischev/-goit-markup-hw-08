@@ -1,10 +1,18 @@
 .section-hero__title {
-    max-width: 696px;
+    max-width: 360px;
     margin: 0 auto;
     margin-bottom: 30px;
 
     color: var(--color-white);
     font-weight: var(--font-w900);
-    @include font (44px, 1.36, 0.06em);
+    @include font (26px, 1.62, 0.06em);
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+    .section-hero__title {
+        max-width: 696px;
+        @include font (44px, 1.36, 0.06em);
+
+    }
 }
