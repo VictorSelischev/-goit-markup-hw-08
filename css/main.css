@@ -375,7 +375,7 @@ textarea {
   color: var(--color-section-theme-dark-text-two);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .footer__logo-address {
     margin-bottom: 60px;
   }
@@ -410,13 +410,10 @@ textarea {
   letter-spacing: 0.03em;
   background-color: var(--background-color-section);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  outline: none;
+  outline: transparent;
 }
 
 @media screen and (max-width: 1199px) {
-  .footer__media {
-    margin-bottom: 60px;
-  }
   .subscription__input {
     margin-bottom: 20px;
     margin-left: auto;
@@ -1037,7 +1034,8 @@ textarea {
 }
 
 .footer {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--color-section-theme-dark);
 }
 
@@ -1048,6 +1046,7 @@ textarea {
   .logo-address-social {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 60px;
   }
 }
 

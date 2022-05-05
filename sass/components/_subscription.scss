@@ -21,14 +21,14 @@
 
   background-color: var(--background-color-section);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  outline: none;
+  outline: transparent;
 }
 
 
 @media screen and (max-width: 1199px) {
-  .footer__media {
-    margin-bottom: 60px;
-  }
+  // .footer__media {
+  //   margin-bottom: 60px;
+  // }
   
   .subscription__input {
     margin-bottom: 20px;
