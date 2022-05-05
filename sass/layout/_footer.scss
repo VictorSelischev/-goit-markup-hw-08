@@ -1,12 +1,40 @@
 .footer {
   padding: 60px 0;
 
-  background-color: var(--background-color-section);
+  background-color: var(--color-section-theme-dark);
 }
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
+@media screen and (max-width:1199px) {
+  .footer {
+      text-align: center;
+  }
+
+  .logo-address-social {
+      margin-left: auto;
+      margin-right: auto;
+  }
 }
+
+@media screen and (min-width:768px) {
+  .logo-address-social {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 603px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .logo-address-social {
+    align-items: baseline;
+  }
+}
+
+
 
 

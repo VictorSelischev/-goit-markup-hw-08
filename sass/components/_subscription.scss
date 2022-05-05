@@ -1,9 +1,3 @@
-.media {}
-
-.footer__media {
-  margin-right: 93px;
-}
-
 .media__text,
 .subscription__text {
   margin-bottom: 20px;
@@ -15,14 +9,13 @@
 }
 
 .subscription__input {
-  display: inline-block;
-  width: 358px;
+  display: block;
+  width: 100%;
   height: 50px;
   border-radius: 4px;
 
   padding: 15px 16px;
-  margin-right: 12px;
-
+  
   color: rgba(255, 255, 255, 0.6);
   @include font (16px, 1.25, 0.03em);
 
@@ -30,3 +23,40 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   outline: none;
 }
+
+
+@media screen and (max-width: 1199px) {
+  .footer__media {
+    margin-bottom: 60px;
+  }
+  
+  .subscription__input {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .subscription__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription {
+    margin-left: auto;
+  }
+
+  .subscription__input {
+    display: inline-block;
+    width: 358px;
+    margin-right: 12px;
+  }
+
+  // .footer__media {
+  //   margin-right: 93px;
+    // flex-grow: 1;
+  // }
+}
+

@@ -1,8 +1,5 @@
 // FOOTER ADDRESS
 
-.address-list {
-}
-
 .address-list__item:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -20,8 +17,17 @@
   }
 }
 
-.footer__logo-address {
-  margin-right: 70px;
-  flex-grow: 1;
+@media screen and (max-width: 1199px) {
+  .footer__logo-address {
+    margin-bottom: 60px;
+  }
 }
+
+@media screen and (min-width: 1200px) {
+  .footer__logo-address {
+    margin-right: 70px;
+    // flex-grow: 1;
+  }
+}
+
 
