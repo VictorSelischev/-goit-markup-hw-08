@@ -61,6 +61,8 @@
   }
 
   .contacts-list__link {
+    @include font (14px, 1.14, 0.02em);
+
     transition: color var(--transition-duration) var(--transition-timing-function);
     
     padding-top: 32px;

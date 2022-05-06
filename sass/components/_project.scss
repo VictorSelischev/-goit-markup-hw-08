@@ -45,18 +45,19 @@
     top: 0;
     left: 0;
 
+    padding: 24px;
+
     @include centeredFlex ();
     width: 100%;
     height: 100%;
-    padding: 24px;
-
+    
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: var(--color-white);
     
     background-color: rgba(33, 150, 243, 0.9);
 
-    overflow-y: auto;
+    overflow: auto;
     transform: translatey(101%);
     transition: transform var(--transition-duration) var(--transition-timing-function);
 
@@ -71,3 +72,10 @@
         font-size: 18px;
     }
 }
+
+// .project__overlay-text {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     padding: 24px;
+// }
