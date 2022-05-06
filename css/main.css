@@ -526,20 +526,6 @@ textarea {
   margin: 0 auto;
 }
 
-.buttons-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
-}
-
-.buttons-list__item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .button-list__button {
   padding: 6px 22px;
   border-radius: 4px;
@@ -562,6 +548,35 @@ textarea {
   background-color: var(--color-brand);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.buttons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -8px -4px;
+  margin-bottom: 40px;
+}
+
+.buttons-list__item {
+  margin: 8px 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .buttons-list {
+    margin-bottom: 50px;
+  }
 }
 
 .backdrop {
@@ -815,7 +830,14 @@ textarea {
 }
 
 .project {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   text-decoration: none;
   -webkit-transition: -webkit-box-shadow var(--transition-duration) var(--transition-timing-function);
   transition: -webkit-box-shadow var(--transition-duration) var(--transition-timing-function);
@@ -834,6 +856,9 @@ textarea {
 }
 
 .project__wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid var(--color-border);
   border-right: 1px solid var(--color-border);
@@ -852,7 +877,7 @@ textarea {
 .project__text {
   color: var(--color-text-two);
   font-size: 16px;
-  line-height: 2;
+  line-height: 1.88;
   letter-spacing: 0.03em;
 }
 
@@ -924,6 +949,7 @@ textarea {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   width: 100vw;
   height: 100vh;
   background-color: var(--color-white);
@@ -1413,26 +1439,37 @@ textarea {
   }
 }
 
-.portfolio-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .portfolio-list__item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  width: 100%;
   background-color: var(--color-white);
 }
 
-.portfolio-list__item:nth-child(3n) {
-  margin-right: 0;
+@media screen and (max-width: 767px) {
+  .portfolio-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-.portfolio-list__item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+  .portfolio-list__item {
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list__item {
+    -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
+        flex-basis: calc((100% - 6 * 15px) / 3);
+  }
 }
 /*# sourceMappingURL=main.css.map */

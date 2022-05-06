@@ -14,37 +14,39 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Портфолио</title>
   </head>
+
   <body>
     <!-- HEADER -->
     <header class="header">
       <div class="container header__container">
         <!-- LOGO -->
-        <a href="./index.html" class="logo header__logo">Web<span class="logo__part logo__part_color_black">Studio</span>
-        </a>
-    
-        <!-- SITENAV -->
+        <a href="./index.html" class="logo header__logo"
+          >Web<span class="logo__part logo__part_color_black">Studio</span></a
+        >
+
+        <!-- NAVIGATION -->
         <nav class="navigation">
-          <ul class="nav-list">
+          <ul class="nav-list list">
             <li class="nav-list__item">
-              <a href="./index.html" class="nav-list__link">Студия</a>
+              <a href="./index.html" сlass="nav-list__link">Студия</a>
             </li>
             <li class="nav-list__item">
               <a href="./portfolio.html" class="nav-list__link current">Портфолио</a>
             </li>
             <li class="nav-list__item">
-              <a href="" class="nav-list__link">Контакты</a>
+              <a href="./index.html#address" class="nav-list__link">Контакты</a>
             </li>
           </ul>
         </nav>
-    
+
         <!-- CONTACTS -->
-        <ul class="contacts-list header__contacts-list">
+        <ul class="contacts-list list header__contacts-list">
           <li class="contacts-list__item">
             <a href="mailto:info@devstudio.com" class="contacts-list__link">
-              <svg width="16" height="12" class="contacts-list__icon">
+              <svg width="14" height="10" class="contacts-list__icon contacts-list__mail">
                 <use href="./images/icons.svg#mail"></use>
               </svg>
               info@devstudio.com
@@ -52,13 +54,108 @@
           </li>
           <li class="contacts-list__item">
             <a href="tel:+380961111111" class="contacts-list__link">
-              <svg width="12" height="16" class="contacts-list__icon">
+              <svg width="10" height="14" class="contacts-list__icon contacts-list__tel">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
           </li>
         </ul>
+
+        <!-- BUTTON MOBILE MENU -->
+        <button type="button" class="mobile-menu-button" data-menu-open>
+          <svg width="40" height="40" class="mobile-menu-button__icon">
+            <use
+              href="./images/icons.svg#mobile-menu-burger"
+              class="mobile-menu-button__icon-burger"
+            ></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <!-- BUTTON-CLOSE MOBILE MENU -->
+          <button
+            type="button"
+            class="mobile-menu-button mobile-menu-button__close-button"
+            data-menu-close
+          >
+            <svg width="40" height="40" class="mobile-menu__close">
+              <use
+                href="./images/icons.svg#mobile-menu-close"
+                class="mobile-menu-button__icon-close"
+              ></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu-nav list">
+            <li class="mobile-menu-nav__item">
+              <a href="./index.html" class="mobile-menu-nav__link">Студия</a>
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a href="./portfolio.html" class="mobile-menu-nav__link">Портфолио</a>
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a href="./index.html#address" class="mobile-menu-nav__link">Контакты</a>
+            </li>
+          </ul>
+
+          <div class="mobile-menu__bottom">
+            <ul class="mobile-menu-contacts list">
+              <li class="mobile-menu-contacts__item">
+                <a href="tel:+380961111111" class="mobile-menu-contacts__link telefon"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-menu-contacts__item">
+                <a href="mailto: info@devstudio.com" class="mobile-menu-contacts__link mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mobile-menu-socials list">
+              <li class="mobile-menu-socials__item">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mobile-menu-socials__link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-menu-socials__item">
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mobile-menu-socials__link"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mobile-menu-socials__item">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mobile-menu-socials__link"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mobile-menu-socials__item">
+                <a
+                  href="https://ua.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mobile-menu-socials__link"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -68,29 +165,34 @@
           <h1 class="section_title visually-hidden">Фильтры портфолио</h1>
 
           <!-- PORTFOLIO-BUTTONS -->
-          <ul class="buttons-list">
-            <li class="buttons-list__item"><button type="button" class="button-list__button">Все</button></li>
+          <ul class="buttons-list list">
+            <li class="buttons-list__item">
+              <button type="button" class="button-list__button">Все</button>
+            </li>
             <li class="buttons-list__item">
               <button type="button" class="button-list__button">Веб-сайты</button>
             </li>
             <li class="buttons-list__item">
               <button type="button" class="button-list__button">Приложения</button>
             </li>
-            <li class="buttons-list__item"><button type="button" class="button-list__button">Дизайн</button></li>
+            <li class="buttons-list__item">
+              <button type="button" class="button-list__button">Дизайн</button>
+            </li>
             <li class="buttons-list__item">
               <button type="button" class="button-list__button">Маркетинг</button>
             </li>
           </ul>
 
           <!-- PORTFOLIO -->
-          <ul class="portfolio-list">
+          <ul class="portfolio-list list">
             <li class="portfolio-list__item">
               <a href="" class="project">
                 <div class="project__image-box">
                   <img
                     src="./images/portfolio-1.jpg"
                     alt="Изображение страницы сайта на ноутбуке"
-                    width="370" class="project__image"
+                    width="370"
+                    class="project__image"
                   />
                   <div class="project__overlay">
                     <p class="project__overlay-text">
@@ -112,7 +214,8 @@
                   <img
                     src="./images/portfolio-2.jpg"
                     alt="Постер с изображением соперничающих за мяч баскетболистов"
-                    width="370" class="project__image"
+                    width="370"
+                    class="project__image"
                   />
                   <div class="project__overlay">
                     <p class="project__overlay-text">
@@ -133,7 +236,12 @@
             <li class="portfolio-list__item">
               <a href="" class="project">
                 <div class="project__image-box">
-                  <img src="./images/portfolio-3.jpg" alt="Логотип ресторана Сеафуд" width="370" class="project__image" />
+                  <img
+                    src="./images/portfolio-3.jpg"
+                    alt="Логотип ресторана Сеафуд"
+                    width="370"
+                    class="project__image"
+                  />
                   <div class="project__overlay">
                     <p class="project__overlay-text">
                       Технокряк это современная площадка распространения коронавируса. Компании
@@ -151,7 +259,12 @@
             <li class="portfolio-list__item">
               <a href="" class="project">
                 <div class="project__image-box">
-                  <img src="./images/portfolio-4.jpg" alt="Наушники" width="370" class="project__image" />
+                  <img
+                    src="./images/portfolio-4.jpg"
+                    alt="Наушники"
+                    width="370"
+                    class="project__image"
+                  />
                   <div class="project__overlay">
                     <p class="project__overlay-text">
                       Технокряк это современная площадка распространения коронавируса. Компании
@@ -169,7 +282,12 @@
             <li class="portfolio-list__item">
               <a href="" class="project">
                 <div class="project__image-box">
-                  <img src="./images/portfolio-5.jpg" alt="Две упаковочные коробки" width="370" class="project__image"/>
+                  <img
+                    src="./images/portfolio-5.jpg"
+                    alt="Две упаковочные коробки"
+                    width="370"
+                    class="project__image"
+                  />
                   <div class="project__overlay">
                     <p class="project__overlay-text">
                       Технокряк это современная площадка распространения коронавируса. Компании
@@ -190,7 +308,8 @@
                   <img
                     src="./images/portfolio-6.jpg"
                     alt="Изображение сайта с черным фоном и белыми буквами на эране монитора"
-                    width="370" class="project__image"
+                    width="370"
+                    class="project__image"
                   />
                   <div class="project__overlay">
                     <p class="project__overlay-text">
@@ -212,7 +331,8 @@
                   <img
                     src="./images/portfolio-7.jpg"
                     alt="Раскрытая книга с иллюстрациями"
-                    width="370" class="project__image"
+                    width="370"
+                    class="project__image"
                   />
                   <div class="project__overlay">
                     <p class="project__overlay-text">
@@ -234,7 +354,8 @@
                   <img
                     src="./images/portfolio-8.jpg"
                     alt="Лэйба с логотипом компании ЛАБ"
-                    width="370" class="project__image"
+                    width="370"
+                    class="project__image"
                   />
                   <div class="project__overlay">
                     <p class="project__overlay-text">
@@ -246,7 +367,7 @@
                 </div>
                 <div class="project__wrapper">
                   <h2 class="project__title">Проект <span lang="en">LAB</span></h2>
-                  <p class="portfolio__text">Маркетинг</p>
+                  <p class="project__text">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -256,7 +377,8 @@
                   <img
                     src="./images/portfolio-9.jpg"
                     alt="Работа с приложением Гровин Бизнес на ноутбуке"
-                    width="370" class="project__image"
+                    width="370"
+                    class="project__image"
                   />
                   <div class="project__overlay">
                     <p class="project__overlay-text">
@@ -277,72 +399,102 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="address">
       <div class="container footer__container">
-        <div class="footer__logo-address">
-          <!-- LOGO FOOTER -->
-          <a href="./index.html" class="logo footer__logo">Web<span class="logo__part logo__part_color_white">Studio</span></a>
-    
-          <!-- ADDRESS -->
-          <address class="address">
-            <ul class="address-list">
-              <li class="address-list__item">
-                <a href="https://goo.gl/maps/hZ6GG7BoJjNdGrGMA" target="_blank" rel="noopener noreferrer"
-                  class="address-list__link">
-                  г. Киев, пр-т Леси Украинки, 26
+        <div class="logo-address-social">
+          <div class="logo-address footer__logo-address">
+            <!-- LOGO FOOTER -->
+            <a href="./index.html" class="logo footer__logo"
+              >Web<span class="logo__part logo__part_color_white">Studio</span></a
+            >
+
+            <!-- ADDRESS -->
+            <address class="address">
+              <ul class="address-list list">
+                <li class="address-list__item">
+                  <a
+                    href="https://goo.gl/maps/hZ6GG7BoJjNdGrGMA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="address-list__link"
+                  >
+                    г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="address-list__item">
+                  <a
+                    href="mailto:info@example.com"
+                    class="address-list__link address-list__link_color_two"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="address-list__item">
+                  <a
+                    href="tel:+380991111111"
+                    class="address-list__link address-list__link_color_two"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <!-- ADDRESS-ICONS -->
+          <div class="media footer__media">
+            <p class="media__text">присоединяйтесь</p>
+            <ul class="icons-list list">
+              <li class="icons-list__item">
+                <a
+                  href="https://www.instagram.com/?hl=ru"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="icons-list__link icons-list__link_theme_dark"
+                >
+                  <svg width="20" height="20" class="icons-list__icon">
+                    <use href="./images/icons.svg#soc-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="address-list__item">
-                <a href="mailto:info@example.com"
-                  class="address-list__link address-list__link_color_two">info@example.com</a>
+              <li class="icons-list__item">
+                <a
+                  href="https://twitter.com/?lang=ru"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="icons-list__link icons-list__link_theme_dark"
+                >
+                  <svg width="20" height="20" class="icons-list__icon">
+                    <use href="./images/icons.svg#soc-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address-list__item">
-                <a href="tel:+380991111111" class="address-list__link address-list__link_color_two">+38 099 111 11
-                  11</a>
+              <li class="icons-list__item">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="icons-list__link icons-list__link_theme_dark"
+                >
+                  <svg width="20" height="20" class="icons-list__icon">
+                    <use href="./images/icons.svg#soc-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icons-list__item">
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="icons-list__link icons-list__link_theme_dark"
+                >
+                  <svg width="20" height="20" class="icons-list__icon">
+                    <use href="./images/icons.svg#soc-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-    
-        <!-- ADDRESS-ICONS -->
-        <div class="media footer__media">
-          <p class="media__text">присоединяйтесь</p>
-          <ul class="icons-list">
-            <li class="icons-list__item">
-              <a href="https://www.instagram.com/?hl=ru" target="_blank" rel="noopener noreferrer"
-                class="icons-list__link icons-list__link_theme_dark">
-                <svg width="20" height="20" class="icons-list__icon">
-                  <use href="./images/icons.svg#soc-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icons-list__item">
-              <a href="https://twitter.com/?lang=ru" target="_blank" rel="noopener noreferrer"
-                class="icons-list__link icons-list__link_theme_dark">
-                <svg width="20" height="20" class="icons-list__icon">
-                  <use href="./images/icons.svg#soc-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icons-list__item">
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
-                class="icons-list__link icons-list__link_theme_dark">
-                <svg width="20" height="20" class="icons-list__icon">
-                  <use href="./images/icons.svg#soc-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icons-list__item">
-              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
-                class="icons-list__link icons-list__link_theme_dark">
-                <svg width="20" height="20" class="icons-list__icon">
-                  <use href="./images/icons.svg#soc-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-    
+
         <!-- SUBSCRIBTION -->
         <form class="subscription">
           <h3 class="subscription__text">Подпишитесь на рассылку</h3>
@@ -356,5 +508,7 @@
         </form>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
