@@ -3,7 +3,7 @@
   margin-bottom: 30px;
 
   color: var(--color-text-two);
-  @include font (14px, 1.71, 0.03em);
+  @include font (12px, 1.17, 0.03em);
 }
 
 .form-modal__checkbox[type='checkbox'] {
@@ -40,4 +40,8 @@
   cursor: pointer;
 }
 
-
+@media screen and (min-width: 1200px) {
+  .form-modal__checkbox-text {
+    @include font (14px, 1.71, 0.03em);
+  }
+}

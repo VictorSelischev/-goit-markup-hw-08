@@ -877,16 +877,16 @@
     </footer>
 
     <!-- BACKDROP & MODAL WINDOW -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="cross" data-modal-close>
           <svg width="18" height="18" class="cross__icon">
             <use href="./images/icons.svg#cross"></use>
           </svg>
-        </button> -->
+        </button>
 
-    <!-- FORM -->
-    <!-- <form class="form-modal">
+        <!-- FORM -->
+        <form class="form-modal">
           <p class="form-modal__title">Оставьте свои данные, мы вам перезвоним</p>
           <div class="form-modal__field">
             <label for="name" class="form-modal__label">Имя</label>
@@ -926,20 +926,28 @@
           </div>
 
           <label for="check" class="form-modal__checkbox-text">
-            <input type="checkbox" name="contract" value="yes" id="check" class="form-modal__checkbox" />
+            <input
+              type="checkbox"
+              name="contract"
+              value="yes"
+              id="check"
+              class="form-modal__checkbox"
+            />
             <span class="form-modal__check">
               <svg width="11" height="8" class="form-modal__icon-checkbox">
                 <use href="./images/icons.svg#check"></use>
               </svg>
             </span>
-            Соглашаюсь с рассылкой и принимаю&nbsp;
-            <a href="" class="form-modal__link">Условия договора</a>
+            <span>
+              Соглашаюсь с рассылкой и принимаю&nbsp;
+              <a href="" class="form-modal__link">Условия договора</a>
+            </span>
           </label>
 
           <button type="submit" class="button button__form-modal">Отправить</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
