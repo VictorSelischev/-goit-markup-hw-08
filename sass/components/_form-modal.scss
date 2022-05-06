@@ -58,9 +58,9 @@
 
   fill: currentColor;
 
-  .form-field__input:focus + & {
-    fill: var(--color-brand);
-  }
+  .form-modal__input:focus + & {
+      fill: var(--color-brand);
+    }
 }
 
 .form-modal__comment {

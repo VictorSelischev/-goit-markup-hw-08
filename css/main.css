@@ -710,7 +710,7 @@ textarea {
   fill: currentColor;
 }
 
-.form-field__input:focus + .form-modal__icon {
+.form-modal__input:focus + .form-modal__icon {
   fill: var(--color-brand);
 }
 
