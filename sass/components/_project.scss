@@ -55,7 +55,7 @@
 
     background-color: rgba(33, 150, 243, 0.9);
 
-    overflow: auto;
+    overflow-y: auto;
     transform: translatey(101%);
     transition: transform var(--transition-duration) var(--transition-timing-function);
 
