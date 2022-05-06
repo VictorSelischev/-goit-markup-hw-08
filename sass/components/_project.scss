@@ -50,9 +50,10 @@
     height: 100%;
     padding: 24px;
 
+    line-height: 1.56;
+    letter-spacing: 0.03em;
     color: var(--color-white);
-    @include font (18px, 1.56, 0.03em);
-
+    
     background-color: rgba(33, 150, 243, 0.9);
 
     overflow-y: auto;
@@ -62,5 +63,11 @@
     .project:hover &,
     .project:focus & {
         transform: translatey(0);
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .project__overlay {
+        font-size: 18px;
     }
 }
